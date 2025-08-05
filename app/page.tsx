@@ -4,24 +4,31 @@ export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
 
-      {/* ABOUT SECTION */}
-      <img
-  src="/javid.jpg"
-  alt="Shaik Javid"
-  className="w-32 h-32 rounded-full object-cover shadow-md border border-gray-300 dark:border-neutral-700"
-/>
-
       <section id="about" className="mb-12 scroll-mt-20">
-        <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-             About Me
-        </h1>
-        <p className="mb-4">
-          I'm <strong>Shaik Javid</strong>, a final-year Computer Science Engineering student passionate about full-stack development and real-world problem solving. I've completed multiple internships and enjoy working with technologies like React, Node.js, C, Java, Python, and Oracle DB.
-        </p>
-        <p className="mb-4">
-          I also actively engage in technical blogging, attend webinars, and constantly strive to improve my DSA, DevOps, and project-building skills. I love solving problems and exploring new technologies that can make a real difference.
-        </p>
-      </section>
+  <div className="flex flex-col items-center text-center">
+    {/* PROFILE IMAGE */}
+    <img
+      src="/javid.jpg"
+      alt="Shaik Javid"
+      className="w-32 h-32 rounded-full object-cover shadow-md border border-gray-300 dark:border-neutral-700 mb-4"
+    />
+
+    {/* HEADING */}
+    <h1 className="text-2xl font-semibold tracking-tighter mb-4">
+      About Me
+    </h1>
+
+    {/* BIO */}
+    <p className="max-w-xl text-neutral-700 dark:text-neutral-300 mb-2">
+      I'm <strong>Shaik Javid</strong>, a final-year Computer Science Engineering student passionate about full-stack development and real-world problem solving. I've completed multiple internships and enjoy working with technologies like React, Node.js, C, Java, Python, and Oracle DB.
+    </p>
+
+    <p className="max-w-xl text-neutral-700 dark:text-neutral-300">
+      I actively engage in technical blogging, attend webinars, and constantly strive to improve my DSA, DevOps, and project-building skills. I love solving problems and exploring new technologies that can make a real difference.
+    </p>
+  </div>
+</section>
+
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="mb-12 scroll-mt-20">
