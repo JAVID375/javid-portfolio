@@ -13,7 +13,7 @@ export default function Page() {
 
       <section id="about" className="mb-12 scroll-mt-20">
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-          About Me
+             About Me
         </h1>
         <p className="mb-4">
           I'm <strong>Shaik Javid</strong>, a final-year Computer Science Engineering student passionate about full-stack development and real-world problem solving. I've completed multiple internships and enjoy working with technologies like React, Node.js, C, Java, Python, and Oracle DB.
