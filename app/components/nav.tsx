@@ -1,20 +1,36 @@
-import Link from 'next/link'
+const navItems = {
+  '#about': {
+    name: 'about',
+  },
+  '#projects': {
+    name: 'projects',
+  },
+  '#contact': {
+    name: 'contact',
+  },
+}
 
-export default function Nav() {
+export function Navbar() {
   return (
-    <header className="mb-16">
-      <nav className="flex justify-between items-center py-10">
-        <Link href="/">
-          <span className="text-2xl font-bold text-black dark:text-white">
-            Shaik Javid
-          </span>
-        </Link>
-        <div className="space-x-4 text-neutral-600 dark:text-neutral-300 text-sm">
-          <a href="#about" className="hover:underline">About</a>
-          <a href="#projects" className="hover:underline">Projects</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <aside className="-ml-[8px] mb-16 tracking-tight">
+      <div className="lg:sticky lg:top-20">
+        <nav
+          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          id="nav"
+        >
+          <div className="flex flex-row space-x-0 pr-10">
+            {Object.entries(navItems).map(([path, { name }]) => (
+              <a
+                key={path}
+                href={path}
+                className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1 capitalize"
+              >
+                {name}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </aside>
   )
 }
