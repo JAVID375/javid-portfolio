@@ -5,6 +5,12 @@ export default function Page() {
     <main className="max-w-4xl mx-auto px-4 py-10">
 
       {/* ABOUT SECTION */}
+      <img
+  src="/javid.jpg"
+  alt="Shaik Javid"
+  className="w-32 h-32 rounded-full object-cover shadow-md border border-gray-300 dark:border-neutral-700"
+/>
+
       <section id="about" className="mb-12 scroll-mt-20">
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
           About Me
