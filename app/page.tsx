@@ -31,10 +31,7 @@ export default function Page() {
       </section>
 
       {/* BLOG POSTS SECTION */}
-      <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Blog</h2>
-        <BlogPosts />
-      </section>
+      
 
       {/* CONTACT SECTION */}
       <section id="contact" className="mb-12 scroll-mt-20">
